@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "meowapps dev",
+    "deploy": "meowapps deploy",
+    "upgrade": "node -e \"fs=require('fs');['node_modules','package-lock.json','dist'].forEach(p=>fs.rmSync(p,{recursive:true,force:true}))\" && npm i"
+  },
+  "dependencies": {
+    "meowapps": "github:meowapps/meowapps",
+    "react": "^19.2.4"
+  }
+}
